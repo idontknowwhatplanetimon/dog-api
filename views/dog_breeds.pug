@@ -1,0 +1,15 @@
+html
+	include head.pug
+	link(rel="stylesheet", href="/stylesheets/dog_breeds.css")
+	body
+		div.breed-card-container
+			each breed in breeds
+				div.card-item
+						h2=breed.name
+						hr
+						p="Weight: " + breed.weight.metric
+						p="Height: " + breed.height.metric
+						p="Name: " + breed.name
+						p="Life span: " + breed.life_span
+						p="Temperament: " + breed.temperament	
+						a.btn(href="/dogs/images/" + breed.id) Search		

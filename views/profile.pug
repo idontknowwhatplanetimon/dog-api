@@ -1,0 +1,15 @@
+html
+	include head.pug
+	link(rel="stylesheet", href="/stylesheets/profile.css")
+	script(src="https://kit.fontawesome.com/566f2e2d35.js" crossorigin="anonymous")
+	body
+		div.profile-div
+			div.profile-image
+				i(class="fas fa-user-astronaut")
+			div.profile-info
+				p="Username: " + username
+				hr
+		div.favourite-images
+			h2 Favorite Images
+			each image in images
+				div.favourite-image-container(style="background-image: url(" + image.image.url + ")")

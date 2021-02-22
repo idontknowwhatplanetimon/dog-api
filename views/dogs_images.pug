@@ -1,0 +1,12 @@
+html
+	include head.pug
+	link(rel="stylesheet" href="/stylesheets/dogs_images.css")
+	script(src="/views_scripts/dogs_images.js")
+	body
+		div.image-container
+			each image in images
+				div.image-item(style="background-image: url(" + image.url + ")")
+					div.image-overlay-container
+					if isLoggedIn
+						button.btn(type="button" image-id="" + image.id  onclick="addToFavourite(event)") Add to Favourite
+

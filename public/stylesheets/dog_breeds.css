@@ -1,0 +1,17 @@
+.breed-card-container {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.breed-card-container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.card-item .btn {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}

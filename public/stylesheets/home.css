@@ -1,0 +1,54 @@
+.main-div {
+	height: 100vh;
+	background-image: linear-gradient(rgba(250, 128, 114, 0.7), rgba(0, 0, 0, 0.7)), url('../images/dog_home.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(4px);
+	position: relative;
+}
+
+.list-div {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	text-align: center;
+}
+
+.list-div ul {
+	list-style-type: none;
+}
+
+.list-div ul li {
+	margin-bottom: 25px;
+}
+
+#login-button {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+#signup-button {
+	position: absolute;
+	right: 10px;
+	top: 55px;
+}
+
+.profile-link-div {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	padding: 10px 35px;
+	background: linear-gradient(rgba(250, 128, 114, 0.7), rgba(0, 0, 0, 0.2));
+}
+
+.profile-link-div .profile-link i {
+	font-size: 1.4rem;
+	margin-bottom: 5px;
+	color: #fff;
+}
